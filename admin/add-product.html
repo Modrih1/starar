@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Додати товар | Starar</title>
+    <link rel="stylesheet" href="../css/admin.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="admin-panel">
+    <!-- Бічна панель -->
+    <div class="sidebar">
+        <div class="sidebar-header">
+            <h1>Starar</h1>
+        </div>
+        <nav class="sidebar-menu">
+            <a href="dashboard.html" class="menu-item">
+                <i class="fas fa-tachometer-alt"></i> Головна
+            </a>
+            <a href="products.html" class="menu-item active">
+                <i class="fas fa-box"></i> Товари
+            </a>
+            <a href="edit-texts.html" class="menu-item">
+                <i class="fas fa-font"></i> Редагування текстів
+            </a>
+            <a href="edit-images.html" class="menu-item">
+                <i class="fas fa-images"></i> Редагування зображень
+            </a>
+            <a href="../index.html" class="menu-item">
+                <i class="fas fa-home"></i> На сайт
+            </a>
+        </nav>
+    </div>
+
+    <!-- Основний контент -->
+    <div class="main-content">
+        <div class="page-header">
+            <h1>Додати новий товар</h1>
+        </div>
+        
+        <div class="page-content">
+            <form id="product-form" class="edit-form">
+                <div class="form-group">
+                    <label for="product-name">Назва товару*</label>
+                    <input type="text" id="product-name" name="product-name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="product-price">Ціна*</label>
+                    <input type="number" id="product-price" name="product-price" step="0.01" min="0" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="product-old-price">Стара ціна (опціонально)</label>
+                    <input type="number" id="product-old-price" name="product-old-price" step="0.01" min="0">
+                </div>
+                
+                <div class="form-group">
+                    <label for="product-description">Опис товару</label>
+                    <textarea id="product-description" name="product-description"></textarea>
+                </div>
+                
+                <div class="form-group image-upload">
+                    <label for="product-image">Зображення товару</label>
+                    <input type="file" id="product-image" name="product-image" accept="image/*">
+                    <img id="product-image-preview" class="image-preview" style="display: none;">
+                </div>
+                
+                <div class="form-group">
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="product-is-new" name="product-is-new">
+                        <label for="product-is-new">Відмітити як новинку</label>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="product-is-sale" name="product-is-sale">
+                        <label for="product-is-sale">Відмітити як товар зі знижкою</label>
+                    </div>
+                </div>
+                
+                <div class="form-actions">
+                    <a href="products.html" class="btn-secondary">Скасувати</a>
+                    <button type="submit" class="btn-primary">Зберегти товар</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    
+    <script src="../js/admin.js"></script>
+</body>
+</html> 

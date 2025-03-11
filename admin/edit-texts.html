@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Редагування текстів | Starar</title>
+    <link rel="stylesheet" href="../css/admin.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="admin-panel">
+    <!-- Бічна панель -->
+    <div class="sidebar">
+        <div class="sidebar-header">
+            <h1>Starar</h1>
+        </div>
+        <nav class="sidebar-menu">
+            <a href="dashboard.html" class="menu-item">
+                <i class="fas fa-tachometer-alt"></i> Головна
+            </a>
+            <a href="products.html" class="menu-item">
+                <i class="fas fa-box"></i> Товари
+            </a>
+            <a href="edit-texts.html" class="menu-item active">
+                <i class="fas fa-font"></i> Редагування текстів
+            </a>
+            <a href="edit-images.html" class="menu-item">
+                <i class="fas fa-images"></i> Редагування зображень
+            </a>
+            <a href="../index.html" class="menu-item">
+                <i class="fas fa-home"></i> На сайт
+            </a>
+        </nav>
+    </div>
+
+    <!-- Основний контент -->
+    <div class="main-content">
+        <div class="page-header">
+            <h1>Редагування текстів</h1>
+        </div>
+        
+        <div class="page-content">
+            <form id="edit-texts-form" class="edit-form">
+                <div class="form-section">
+                    <h2>Hero секція</h2>
+                    
+                    <h3>Слайд 1</h3>
+                    <div class="form-group">
+                        <label for="heroTitle1">Заголовок</label>
+                        <input type="text" id="heroTitle1" name="heroTitle1">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="heroSubtitle1">Підзаголовок</label>
+                        <input type="text" id="heroSubtitle1" name="heroSubtitle1">
+                    </div>
+                    
+                    <h3>Слайд 2</h3>
+                    <div class="form-group">
+                        <label for="heroTitle2">Заголовок</label>
+                        <input type="text" id="heroTitle2" name="heroTitle2">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="heroSubtitle2">Підзаголовок</label>
+                        <input type="text" id="heroSubtitle2" name="heroSubtitle2">
+                    </div>
+                </div>
+                
+                <div class="form-section">
+                    <h2>Секція колекції</h2>
+                    
+                    <div class="form-group">
+                        <label for="collectionTitle">Заголовок</label>
+                        <input type="text" id="collectionTitle" name="collectionTitle">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="collectionSubtitle">Підзаголовок</label>
+                        <input type="text" id="collectionSubtitle" name="collectionSubtitle">
+                    </div>
+                </div>
+                
+                <div class="form-section">
+                    <h2>Відгуки</h2>
+                    
+                    <h3>Відгук 1</h3>
+                    <div class="form-group">
+                        <label for="reviewerName1">Ім'я</label>
+                        <input type="text" id="reviewerName1" name="reviewerName1">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="reviewText1">Текст відгуку</label>
+                        <textarea id="reviewText1" name="reviewText1"></textarea>
+                    </div>
+                    
+                    <h3>Відгук 2</h3>
+                    <div class="form-group">
+                        <label for="reviewerName2">Ім'я</label>
+                        <input type="text" id="reviewerName2" name="reviewerName2">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="reviewText2">Текст відгуку</label>
+                        <textarea id="reviewText2" name="reviewText2"></textarea>
+                    </div>
+                    
+                    <h3>Відгук 3</h3>
+                    <div class="form-group">
+                        <label for="reviewerName3">Ім'я</label>
+                        <input type="text" id="reviewerName3" name="reviewerName3">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="reviewText3">Текст відгуку</label>
+                        <textarea id="reviewText3" name="reviewText3"></textarea>
+                    </div>
+                </div>
+                
+                <div class="form-section">
+                    <h2>Блог</h2>
+                    
+                    <div class="form-group">
+                        <label for="blogTitle">Заголовок</label>
+                        <input type="text" id="blogTitle" name="blogTitle">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="blogSubtitle">Підзаголовок</label>
+                        <input type="text" id="blogSubtitle" name="blogSubtitle">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="blogText">Текст</label>
+                        <input type="text" id="blogText" name="blogText">
+                    </div>
+                </div>
+                
+                <div class="form-actions">
+                    <button type="submit" class="btn-primary">Зберегти зміни</button>
+                </div>
+                
+                <div id="success-message" class="success-message"></div>
+            </form>
+        </div>
+    </div>
+    
+    <script src="../js/admin.js"></script>
+</body>
+</html> 

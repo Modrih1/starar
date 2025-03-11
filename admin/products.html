@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Товари | Starar</title>
+    <link rel="stylesheet" href="../css/admin.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .badge-new, .badge-sale {
+            display: inline-block;
+            padding: 3px 8px;
+            margin-right: 5px;
+            border-radius: 3px;
+            color: white;
+            font-size: 12px;
+        }
+        .badge-new {
+            background-color: #007bff;
+        }
+        .badge-sale {
+            background-color: #dc3545;
+        }
+    </style>
+</head>
+<body class="admin-panel">
+    <!-- Бічна панель -->
+    <div class="sidebar">
+        <div class="sidebar-header">
+            <h1>Starar</h1>
+        </div>
+        <nav class="sidebar-menu">
+            <a href="dashboard.html" class="menu-item">
+                <i class="fas fa-tachometer-alt"></i> Головна
+            </a>
+            <a href="products.html" class="menu-item active">
+                <i class="fas fa-box"></i> Товари
+            </a>
+            <a href="edit-texts.html" class="menu-item">
+                <i class="fas fa-font"></i> Редагування текстів
+            </a>
+            <a href="edit-images.html" class="menu-item">
+                <i class="fas fa-images"></i> Редагування зображень
+            </a>
+            <a href="../index.html" class="menu-item">
+                <i class="fas fa-home"></i> На сайт
+            </a>
+        </nav>
+    </div>
+
+    <!-- Основний контент -->
+    <div class="main-content">
+        <div class="page-header">
+            <h1>Управління товарами</h1>
+            <a href="add-product.html" class="btn-primary">
+                <i class="fas fa-plus"></i> Додати товар
+            </a>
+        </div>
+        
+        <div class="page-content">
+            <div class="table-container">
+                <table id="products-table" class="admin-table">
+                    <thead>
+                        <tr>
+                            <th>Зображення</th>
+                            <th>Назва</th>
+                            <th>Ціна</th>
+                            <th>Статус</th>
+                            <th>Дії</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Товари будуть додані JavaScript'ом -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    
+    <script src="../js/admin.js"></script>
+</body>
+</html> 
